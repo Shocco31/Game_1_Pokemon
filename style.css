@@ -1,0 +1,84 @@
+#game {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: url("img/fond2.png");
+  background-size: contain;
+  overflow: hidden;
+}
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100px;
+
+  background: url("img/ground.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+#player {
+  position: absolute;
+  bottom: 400px;
+  left: 400px;
+
+  width: 100px;
+  height: 120px;
+
+  background: url("img/ponyta.png");
+  background-size: cover;
+
+  transition: 2s;
+  transition-timing-function: ease-in;
+}
+
+.eagle {
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+
+  width: 45px;
+  height: 60px;
+
+  background: url("img/pokeball.png");
+  background-size: contain;
+}
+
+#game-start{
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  background-color: rgba(0, 119, 255, 0.295);
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  background-color: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 10px;
+}
+
+#game_over{
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  margin-left: 40%;
+  margin-top: 15%;
+  color: white;
+  font-size: xx-large;
+}
