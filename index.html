@@ -9,20 +9,19 @@
   </head>
   <body>
     <section id="game">
-      <div id="game-start">
-          <p>Pokemon, the new Game</p>
-          <button class="button" onclick="startGame()">Start</button>
+      <div id="game_start">
+        <p id="game_title">Pokemon, the new Game</p>
+        <div id="game_over">
+          <h2>Game over!</h2>
         </div>
-          
+        <button id="start_button" class="button" onclick="startGame()">Start</button>
+      </div>          
       <div id="enemies"></div>
 
       <div id="ground"></div>
 
       <div id="player"></div>
 
-      <div id="game_over">
-        <h2>Game over!</h2>
-      </div>
     </section>
     <script src="game.js"></script>
   </body>
